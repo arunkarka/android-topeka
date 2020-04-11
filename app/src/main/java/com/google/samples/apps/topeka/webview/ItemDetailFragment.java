@@ -67,7 +67,7 @@ public class ItemDetailFragment extends Fragment {
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         myWebView.setWebViewClient(new WebViewClient());
-        myWebView.loadUrl("http://www.google.com");
+        myWebView.loadUrl("https://docs.google.com/forms/d/e/1FAIpQLSfFLDPWanyPkQRfJ4larQmpZEgeG7e5oKuSdJn9mhZ5KCSZaQ/viewform?usp=sf_link");
 
         return rootView;
     }
