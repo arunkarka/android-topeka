@@ -28,6 +28,6 @@
     <string name="sign_out">Sign out</string>
     <string name="x_points">%1$d pts</string>
     <string name="back">back</string>
-    <string name="title_item_list">Items</string>
+    <string name="title_item_list">Exam At Home</string>
     <string name="title_item_detail">Item Detail</string>
 </resources>
