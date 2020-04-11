@@ -26,10 +26,11 @@ public class DummyContent {
     private static final int COUNT = 25;
 
     static {
-        // Add some sample items.
-        for (int i = 1; i <= COUNT; i++) {
-            addItem(createDummyItem(i));
-        }
+        // Add some sample exams.
+        addItem(createExamItem("Maths"));
+        addItem(createExamItem("English"));
+        addItem(createExamItem("Telugu"));
+
     }
 
     private static void addItem(DummyItem item) {
@@ -37,16 +38,13 @@ public class DummyContent {
         ITEM_MAP.put(item.id, item);
     }
 
-    private static DummyItem createDummyItem(int position) {
-        return new DummyItem(String.valueOf(position), "Item " + position, makeDetails(position));
+    private static DummyItem createExamItem(String examName) {
+        return new DummyItem(examName, examName + " Exam ", makeDetails(examName));
     }
 
-    private static String makeDetails(int position) {
+    private static String makeDetails(String examName) {
         StringBuilder builder = new StringBuilder();
-        builder.append("Details about Item: ").append(position);
-        for (int i = 0; i < position; i++) {
-            builder.append("\nMore details information here.");
-        }
+        builder.append("Details about ").append(examName);
         return builder.toString();
     }
 
